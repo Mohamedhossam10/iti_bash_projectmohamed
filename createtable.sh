@@ -52,7 +52,7 @@ touch "$tn"metadata
 filemeta="$tn"metadata
 while [[ $i -le $colnum ]];
 do
-read -p "enter the name of column: " name
+read -p "enter the name of column #$i: " name
 validate_name "$name"
 col=$?
 check_value_in_file "$name" "$filemeta"
